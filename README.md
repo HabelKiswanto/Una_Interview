@@ -4,8 +4,8 @@ Written is a simple application with Spring Boot and MySQL / Postgres DB. With s
 How to run this web app: 
 
 Prequisite: 
-*Java 17
-*Docker installed and running 
+-Java 17
+-Docker installed and running 
 
 1. Open command prompt and be sure to change directory as where you put the files
 Ex: "cd D:\Una^ Community\" and inside this folder is where you put all the files from this github
