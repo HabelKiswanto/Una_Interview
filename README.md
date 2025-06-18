@@ -82,7 +82,7 @@ To install Java, go to https://www.oracle.com/java/technologies/downloads/?er=22
 After downloading the 64 Installer, run it, and put it anywhere
 
 Edit environment variable in system variable make new JAVA_HOME and for the value
-put in the jdk-24 at, start is at "C:\Program Files\Java\jdk-17"
+put in the jdk-17 at, start is at "C:\Program Files\Java\jdk-17"
 
 and also in system variables, you can see path, double click and in there add new
 "%JAVA_HOME%\bin"
