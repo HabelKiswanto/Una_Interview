@@ -7,8 +7,8 @@ Prequisite:
 *Java 17
 *Docker installed and running 
 
-1. Open command prompt and be sure to be in Una community folder 
-Ex: "cd D:\Una^ Community" don't forget the ^
+1. Open command prompt and be sure to change directory as where you put the files
+Ex: "cd D:\Una^ Community\" and inside this folder is where you put all the files from this github
 
 2. Using docker to run database
 
