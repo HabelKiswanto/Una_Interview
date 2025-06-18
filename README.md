@@ -21,7 +21,9 @@ is unacommunity if somehow it conflicting Please let me know.
 
 "mvnw.cmd spring-boot:run"
 
-4. Now for how to insert GraphiQL Input: 
+4. Open the web app on http://localhost:8080/graphiql.html
+  
+5. Now for how to insert GraphiQL Input: 
 
 A. Insert data ex:
 
