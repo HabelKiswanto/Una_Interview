@@ -1,0 +1,5 @@
+com\unacommunity\controller\AssuranceController.class
+com\unacommunity\service\AssuranceService.class
+com\unacommunity\Unademo.class
+com\unacommunity\entity\Assurance.class
+com\unacommunity\repository\Repo.class

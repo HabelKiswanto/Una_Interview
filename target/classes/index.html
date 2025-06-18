@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Justin's Assurance</title>
+</head>
+<body>
+  <h1>Welcome to Justin's Assurance</h1>
+  <form id="assuranceForm">
+    <label>Name: <input type="text" id="name" required></label><br>
+    <label>Age: <input type="number" id="age" required></label><br>
+    <label>Type of assurance:
+      <select id="type">
+        <option value="Life">Life</option>
+        <option value="Health">Health</option>
+        <option value="Vehicle">Vehicle</option>
+      </select>
+    </label><br>
+    <button type="submit">Confirm</button>
+  </form>
+
+  <script>
+    document.getElementById('assuranceForm').addEventListener('submit', async function (e) {
+      e.preventDefault();
+
+      const name = document.getElementById('name').value;
+      const age = parseInt(document.getElementById('age').value);
+      const type = document.getElementById('type').value;
+
+      const response = await fetch('/graphql', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          query: `
+            mutation {
+              createUser(input: { name: "${name}", age: ${age}, assuranceType: "${type}" }) {
+                id
+                name
+              }
+            }
+          `
+        })
+      });
+
+      const result = await response.json();
+      alert("User created: " + result.data.createUser.name);
+    });
+  </script>
+</body>
+</html>

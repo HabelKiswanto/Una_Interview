@@ -1,0 +1,16 @@
+type Entity {
+  id: ID!
+  name: String!
+  age: Int!
+  assuranceType: String!
+}
+
+type Query {
+  getAllEntities: [Entity]
+  getEntityById(id: ID!): Entity
+}
+
+type Mutation {
+  createEntity(name: String!, age: Int!, assuranceType: String!): Entity
+  updateEntity(id: ID!, name: String!, age: Int!, assuranceType: String!): Entity
+}

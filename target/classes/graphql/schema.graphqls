@@ -1,0 +1,17 @@
+type Query {
+  getAssuranceById(id: ID!): Assurance
+  getAllAssurances: [Assurance]
+}
+
+type Mutation {
+  createAssurance(name: String!, age: Int!, assuranceType: String!): Assurance
+  updateAssurance(id: ID!, name: String!, age: Int!, assuranceType: String!): Assurance
+  deleteAssurance(id: ID!): Boolean
+}
+
+type Assurance {
+  id: ID!
+  name: String!
+  age: Int!
+  assuranceType: String!
+}
