@@ -11,22 +11,22 @@ Prequisite:
 Ex: "cd D:\Una^ Community\" and inside this folder is where you put all the files from this github
 
 2. Using docker to run database
-
+```
 "Docker compose up -d" 
-
+```
 The database name is mysql-una and the container name 
 is unacommunity if somehow it conflicting Please let me know. 
 
 3. Start the app
-
+```
 "mvnw.cmd spring-boot:run"
-
+```
 4. Open the web app on http://localhost:8080/graphiql.html
   
 5. Now for how to insert GraphiQL Input: 
 
 A. Insert data ex:
-
+```
 mutation {
   createAssurance(name: "Justin Habel", age: 21, assuranceType: "Basic") {
     id
@@ -35,8 +35,9 @@ mutation {
     assuranceType
   }
 }
-
+```
 B. Update data ex:
+```
 mutation {
   updateAssurance(id: 1, name: "Jordan Cain", age: 22, assuranceType: "Basic") {
     id
@@ -45,8 +46,9 @@ mutation {
     assuranceType
   }
 }
-
+```
 C. Query all data:
+```
 query {
   getAllAssurances {
     id
@@ -55,13 +57,15 @@ query {
     assuranceType
   }
 }
-
+```
 D. Delete by Id:
+```
 mutation {
   deleteAssurance(id: 123)
 }
-
+```
 E. Query data by Id Ex:
+```
 query {
   getAssuranceById(id: 1) {
     id
@@ -70,7 +74,7 @@ query {
     assuranceType
   }
 }
-
+```
 
 Just in case:
 To install Java, go to https://www.oracle.com/java/technologies/downloads/?er=221886#jdk24-windows
